@@ -393,4 +393,24 @@
 // };
 // toJoin(friut7);
 
-const arr = [1, 2, 3, 4];
+// const arr = [1, 2, 3, 4];
+// let input = 5;
+// function add(input) {
+//   let index = arr.length;
+//   arr[index] = input;
+//   return arr;
+// }
+// let result = add(input);
+// console.log(result);
+
+// const arr = [2, 3, 5, 10, 7];
+// const target = 9;
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] + arr[j] === target) {
+//       sum = [arr[i], arr[j]];
+//     }
+//   }
+// }
+// console.log(sum);
