@@ -309,3 +309,88 @@
 //   }
 //   console.log(`${number}-iin tegsh tooni niilber ${result}`);
 // }
+
+// const str = "hello";
+// const str2 = "world";
+// console.log(str.concat(" ", str2));
+
+// // dorjsambuu amarmend iig A.Dorjsambuu bolgono
+// const fullName = "dorjsambuu amarmend";
+// const firstName = fullName.split(" ")[0];
+// const lastName = fullName.split(" ")[1];
+// const firstLetterToUpperCase = (str) => {
+//   return str.slice(0, 1).toUpperCase();
+// };
+// const firstNameToUpperCase = (str) => {
+//   const firstStr = firstLetterToUpperCase(str);
+//   const lastStr = str.slice(1, str.length);
+//   return firstStr + lastStr;
+// };
+// const lastNameStr = firstLetterToUpperCase(lastName);
+// console.log(
+//   lastNameStr + "." + " " + firstNameToUpperCase(firstName, lastName)
+// );
+
+// ...spread operator ilerhiilne
+
+// //obyect
+// let person = {
+//   name: "sambuu",
+//   age: 18,
+// };
+// console.log(person["age"]);
+// console.log(person.name);
+// let person1 = {
+//   firstname: "naraa",
+// };
+// let person2 = person1;
+// person2.firstname = "erdee";
+// console.log(person1.firstname);
+// console.log(person2.firstname);
+
+// const friut1 = ["banana", "apple", "orange", "mango"];
+// console.log(friut1.toString()); //"banana, apple, orange, mango"
+
+// const friut2 = ["banana", "apple", "orange", "mango"];
+// console.log(friut2.join(" and ")); //"banana and apple and orange and mango"
+
+// const friut3 = ["banana", "apple", "orange", "mango"];
+// console.log(friut3.includes("apple")); //true
+
+// const friut4 = ["banana", "apple", "orange", "mango"];
+// console.log(friut4.indexOf("mango"));
+
+// const friut5 = ["banana", "apple", "orange", "mango"];
+// const findIndex = (friut) => {
+//   for (let i = 0; i < friut5.length; i++) {
+//     if (friut5[i] === friut) {
+//       console.log(i);
+//     }
+//   }
+//   return 0;
+// };
+// findIndex("orange");
+
+// const friut6 = ["banana", "apple", "orange", "mango"];
+// const toString = (friutname) => {
+//   let str = "";
+//   let com = ",";
+//   for (let i = 0; i < friutname.length; i++) {
+//     str += friutname[i] + com;
+//     console.log(str);
+//   }
+// };
+// toString(friut6);
+
+// const friut7 = ["banana", "apple", "orange", "mango"];
+// const toJoin = (friuts1) => {
+//   let str = "";
+//   let com = " and ";
+//   for (let i = 0; i < friuts1.length; i++) {
+//     str += friuts1[i] + com;
+//     if (i < friut7.length - 1) console.log(str);
+//   }
+// };
+// toJoin(friut7);
+
+const arr = [1, 2, 3, 4];
