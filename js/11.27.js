@@ -414,3 +414,30 @@
 //   }
 // }
 // console.log(sum);
+
+// //Object----------------------
+// const numberObject = { a: 3, b: 10, c: 3 };
+// const keys = Object.keys(numberObject);
+// let sum = 0;
+// for (let i = 0; i < keys.length; i++) {
+//   sum += numberObject[keys[i]];
+// }
+// console.log(sum);
+
+// // ehni usgiig tom bolgoj butsana---------------------------
+// const stringObject = { name: "john", age: 25, city: "example" };
+// const capitalizeLetter = (text) => {
+//   return text.slice(0, 1).toUpperCase() + text.slice(1); //ehni usgiig tom bolgodog
+// };
+// const capitalizeLetterInObject = (obj) => {
+//   const keys = Object.keys(obj);
+//   for (let i = 0; i < keys.length; i++) {
+//     if (typeof obj[keys[i]] === "string") {
+//       obj[keys[i]] = capitalizeLetter(obj[keys[i]]);
+//     }
+//   }
+//   return obj;
+// };
+// console.log(capitalizeLetterInObject(stringObject));
+
+//DOM==================================//
