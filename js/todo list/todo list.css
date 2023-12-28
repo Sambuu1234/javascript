@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+}
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(hodo.png);
+  background-size: cover;
+}
+.modalcontainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+.modal {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 30px;
+}
+.h1 {
+  font-size: 30px;
+  padding: 10px 0 10px 0;
+}
+.input1 {
+  width: 90%;
+  margin-bottom: 15px;
+  height: 30px;
+}
+.input2 {
+  width: 92%;
+  margin-bottom: 15px;
+  height: 35px;
+}
+.button1 {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  width: 92%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.show {
+  display: flex;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  padding: 120px 0;
+  gap: 16px;
+}
+.board {
+  width: 23%;
+  height: fit-content;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ebecf0;
+  display: flex;
+  flex-direction: column;
+}
+.box1 {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  padding: 8px;
+  gap: 10px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.box2 {
+  background-color: white;
+  padding: 8px;
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: grab;
+}
+.check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.between-box {
+  width: 65%;
+  gap: 14px;
+}
+.check2 {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.check-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.low {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+h1 {
+  font-size: 20px;
+}
+.h3 {
+  /* width: 100%; */
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.h4 {
+  margin-bottom: 10px;
+}
+span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.box3 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.box3:hover {
+  background-color: rgb(195, 191, 191);
+  border-radius: 8px;
+}
+div {
+  font-weight: 800;
+}
