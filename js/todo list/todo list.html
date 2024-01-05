@@ -21,105 +21,84 @@
           <p>Title</p>
           <input class="input1" id="title-input" type="text" />
           <p>Description</p>
-          <input class="input1" id="description-input" type="text" />
+          <input class="input3" id="description-input" type="text" />
           <p>Status</p>
-          <!-- <input class="input1" id="status-input" type="text" /> -->
-          <select class="input2" id="status-input"></select>
-          <!-- <option value="To do">To do</option>
-          <option value="In progress">In progress</option>
-          <option value="Stuck">Stuck</option>
-          <option value="Done">Done</option> -->
+          <select class="input2" id="status-input">
+            <option value="To do">To do</option>
+            <option value="In progress">In progress</option>
+            <option value="Stuck">Stuck</option>
+            <option value="Done">Done</option>
+          </select>
           <p>Priority</p>
-          <!-- <input class="input1" id="priority-input" type="text" /> -->
-          <select class="input2" id="priority-input"></select>
-          <!-- <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="High">High</option> -->
+          <select class="input2" id="priority-input">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
           <button class="button1" onclick="addTodo()">Add Task</button>
         </div>
       </div>
       <div class="container">
-        <!-- 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 -->
-        <div
-          class="board"
-          ondragover="allowDrop(event)"
-          ondrop="drop(event)"
-          id="container-1"
-        >
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
           <div class="box1">
             <h1>To do</h1>
             <span>0</span>
           </div>
           <div
+            id="container-1"
+            class="plus"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+          <!-- <div
             class="box2"
             draggable="true"
             ondragstart="drag(event)"
             id="box-1"
           >
-            <button class="check">
+            <div class="check">
               <i class="fa-solid fa-check"></i>
-            </button>
+            </div>
             <div class="between-box">
-              <h3 class="h3">hihi pinecone</h3>
-              <h4 class="h4">medku</h4>
-              <button class="low">low</button>
+              <h3 class="h3">hihi</h3>
+              <h4 class="h4">hahha</h4>
+              <div class="low">high</div>
             </div>
             <div class="check-b">
-              <button class="check2">
+              <div class="check2">
                 <i class="fa-solid fa-xmark"></i>
-              </button>
-              <button class="check2">
+              </div>
+              <div class="check2">
                 <i class="fa-solid fa-pen-to-square"></i>
-              </button>
+              </div>
             </div>
-          </div>
-          <div
-            class="box2"
-            draggable="true"
-            ondragstart="drag(event)"
-            id="box-1"
-          >
-            <button class="check">
-              <i class="fa-solid fa-check"></i>
-            </button>
-            <div class="between-box">
-              <h3 class="h3">hihi pinecone</h3>
-              <h4 class="h4">medku</h4>
-              <button class="low">low</button>
-            </div>
-            <div class="check-b">
-              <button class="check2">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-              <button class="check2">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-            </div>
-          </div>
-          <div class="box3" onclick="show()">
+          </div> -->
+          <div id="add-todo-button" class="box3" onclick="show()">
             <div><i class="fa-solid fa-plus"></i></div>
             <div>Add card</div>
           </div>
         </div>
-        <!-- 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 -->
-        <div
-          class="board"
-          ondragover="allowDrop(event)"
-          ondrop="drop(event)"
-          id="container-2"
-        >
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
           <div class="box1">
             <h1>In progress</h1>
             <span>0</span>
           </div>
-          <!-- <div class="box2">
+          <div id="container-2" class="plus"></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-2"
+          >
             <button class="check">
               <i class="fa-solid fa-check"></i>
             </button>
             <div class="between-box">
-              <h3 class="h3">aaaaa eeeee</h3>
-              <h4 class="h4">hahhaha</h4>
-              <button class="low">high</button>
+              <h3 class="h3"></h3>
+              <h4 class="h4"></h4>
+              <button class="low"></button>
             </div>
             <div class="check-b">
               <button class="check2">
@@ -130,25 +109,31 @@
               </button>
             </div>
           </div> -->
-          <div class="box3">
+          <div id="add-todo-button" class="box3" onclick="show()">
             <div><i class="fa-solid fa-plus"></i></div>
             <div>Add card</div>
           </div>
         </div>
-        <!-- 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 -->
-        <div class="board">
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
           <div class="box1">
             <h1>Stuck</h1>
             <span>0</span>
           </div>
-          <!-- <div class="box2">
+          <div id="container-3" class="plus"></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-3"
+          >
             <button class="check">
               <i class="fa-solid fa-check"></i>
             </button>
             <div class="between-box">
-              <h3 class="h3">3fsdgvf</h3>
-              <h4 class="h4">3sfdgdfgvf</h4>
-              <button class="low">low</button>
+              <h3 class="h3"></h3>
+              <h4 class="h4"></h4>
+              <button class="low"></button>
             </div>
             <div class="check-b">
               <button class="check2">
@@ -159,18 +144,24 @@
               </button>
             </div>
           </div> -->
-          <div class="box3">
+          <div id="add-todo-button" class="box3" onclick="show()">
             <div><i class="fa-solid fa-plus"></i></div>
             <div>Add card</div>
           </div>
         </div>
-        <!-- 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 -->
-        <div class="board">
+        <!-- ======================================================== -->
+        <div class="board" ondragover="allowDrop(event)" ondrop="drop(event)">
           <div class="box1">
             <h1>Done</h1>
             <span>0</span>
           </div>
-          <!-- <div class="box2">
+          <div id="container-4" class="plus"></div>
+          <!-- <div
+            class="box2"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="box-4"
+          >
             <button class="check">
               <i class="fa-solid fa-check"></i>
             </button>
@@ -188,7 +179,7 @@
               </button>
             </div>
           </div> -->
-          <div class="box3">
+          <div id="add-todo-button" class="box3" onclick="show()">
             <div><i class="fa-solid fa-plus"></i></div>
             <div>Add card</div>
           </div>

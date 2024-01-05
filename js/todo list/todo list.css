@@ -38,6 +38,10 @@
   margin-bottom: 15px;
   height: 35px;
 }
+.input3 {
+  width: 90%;
+  padding-bottom: 70px;
+}
 .button1 {
   background-color: black;
   color: white;
@@ -62,64 +66,73 @@
   padding: 8px;
   border-radius: 8px;
   background-color: #ebecf0;
-  display: flex;
-  flex-direction: column;
 }
 .box1 {
+  width: 400%;
   display: flex;
-  flex-direction: row;
   font-weight: 600;
   padding: 8px;
   gap: 10px;
   margin-bottom: 8px;
   align-items: center;
 }
+h1 {
+  font-size: 20px;
+}
+span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
 .box2 {
+  width: 91%;
   background-color: white;
   padding: 8px;
-  gap: 12px;
+  margin-left: 6px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 8px;
   border-radius: 8px;
-  cursor: grab;
+  gap: 12px;
 }
 .check {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-
   cursor: pointer;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .between-box {
-  width: 65%;
+  width: 79%;
   gap: 14px;
+
+  flex-direction: column;
 }
 .check2 {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  margin-bottom: 8px;
   cursor: pointer;
   margin-bottom: 20px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .check-b {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
+
 .low {
-  display: flex;
-  align-items: flex-end;
+  display: inline-block;
   border-radius: 8px;
   padding: 4px 8px;
+  border: 1px solid gray;
 }
-h1 {
-  font-size: 20px;
-}
+
 .h3 {
-  /* width: 100%; */
   display: inline-block;
   flex-wrap: wrap;
   margin-bottom: 10px;
@@ -127,14 +140,11 @@ h1 {
 .h4 {
   margin-bottom: 10px;
 }
-span {
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.5);
-}
+
 .box3 {
+  width: 95%;
   padding: 8px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 16px;
   cursor: pointer;
@@ -145,4 +155,8 @@ span {
 }
 div {
   font-weight: 800;
+}
+.plus {
+  margin-top: 20px;
+  height: fit-content;
 }

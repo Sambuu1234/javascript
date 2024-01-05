@@ -333,7 +333,7 @@
 
 // ...spread operator ilerhiilne
 
-// //obyect
+// //object
 // let person = {
 //   name: "sambuu",
 //   age: 18,

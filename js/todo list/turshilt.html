@@ -85,7 +85,7 @@
         {
           title: "Code",
           Description: "SPOJ 10 bodlogo",
-          Status: "doing",
+          Status: "done",
           Priority: "high",
         },
         {
@@ -131,6 +131,7 @@
         boxArray.push(inputObj);
         render();
       };
+      //🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠
       //modal il gargah
       const show = () => {
         document
@@ -143,6 +144,7 @@
           .getElementsByClassName("modalContainer")[0]
           .classList.remove("show");
       };
+      //🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠
       //drag drop ajildag bolgoh
       const allowDrop = (event) => {
         event.preventDefault();
@@ -155,6 +157,7 @@
         const boxId = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(boxId));
       };
+      //🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠
       //modal gadna tald darahad nuugdah   ======> zasah shaardlagatai
       const modalContainer =
         document.getElementsByClassName("modalContainer")[0];
